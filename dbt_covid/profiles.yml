@@ -1,0 +1,9 @@
+dbt_covid:
+  outputs:
+    dev:
+      type: clickhouse
+      host: server
+      port: 8123
+      schema: default
+      threads: 4
+  target: dev

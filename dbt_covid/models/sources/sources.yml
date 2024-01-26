@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw_covid
+    schema: default
+    tables:
+      - name: raw_covid_cases
+        columns:
+          - name: geo_id
+            tests:
+              - not_null
+              - length:
+                  len: 2
